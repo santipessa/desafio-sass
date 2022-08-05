@@ -1,0 +1,18 @@
+.hambur {
+    img {
+        border-radius: $font10;
+
+        &:hover {
+            border-style: dotted;
+            border-color: $color-principal;
+            transform: skew(5deg, 5deg);
+        }
+    }
+
+    p {
+        font-size: $font20;
+        font-style: italic;
+        font-weight: bold;
+        margin-top: $font20;
+    }
+}
