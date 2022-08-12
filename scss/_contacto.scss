@@ -10,14 +10,23 @@
     }
 }
 
-#contactoButton {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-size: $font20;
-    background-color: $color-principal;
-    border-radius: 5px;
-    max-width: 200px;
+
+//   MIXINS   //
+
+@mixin config ($top, $bottom, $font, $back, $borde, $width) {
+    margin-top: $top;
+    margin-bottom: $bottom;
+    font-size: $font;
+    background-color: $back;
+    border-radius: $borde;
+    max-width: $width;
 }
+
+#contactoButton {
+    @include config(10px, 10px, 20px, #ffc107, 5px, 200px);
+}
+
+
 
 textarea {
     resize: none;

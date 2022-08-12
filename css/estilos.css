@@ -47,10 +47,39 @@ body {
   .anuncio #anuncioIc {
     font-size: 50px; }
 
-@media screen and (max-width: 300px) {
+.red-envio {
+  color: #06065a; }
+
+.red-pago {
+  color: #022902; }
+
+.red-instagram {
+  color: #da1380; }
+
+.red-whatsapp {
+  color: #11d411; }
+
+.subAnuncio, .subAnuncio-envio, .subAnuncio-pago, .subAnuncio-instagram, .subAnuncio-whatsapp {
+  font-size: 15px;
+  font-style: italic;
+  color: white; }
+
+.subAnuncio-envio {
+  background-color: #06065a; }
+
+.subAnuncio-pago {
+  background-color: #022902; }
+
+.subAnuncio-instagram {
+  background-color: #da1380; }
+
+.subAnuncio-whatsapp {
+  background-color: #11d411; }
+
+@media screen and (max-width: 320px) {
   h1 {
-    font-size: 20px;
-    padding: 10px; } }
+    font-size: 10px;
+    padding: 5px; } }
 
 footer {
   width: auto;

@@ -52,9 +52,52 @@ body {
     }
 }
 
-@media screen and (max-width: 300px){
+//   MAPS   //
+$anuncios: (
+    envio: #06065a,
+    pago: #022902,
+    instagram: #da1380,
+    whatsapp: #11d411,
+);
+
+@each $red, $color in $anuncios {
+    .red-#{$red} {
+        color: $color;
+    }
+}
+
+//   EXTEND   //
+.subAnuncio {
+    font-size: 15px;
+    font-style: italic;
+    color: white;
+}
+
+.subAnuncio-envio {
+    @extend .subAnuncio;
+    background-color: #06065a;
+}
+
+.subAnuncio-pago {
+    @extend .subAnuncio;
+    background-color: #022902;
+}
+
+.subAnuncio-instagram {
+    @extend .subAnuncio;
+    background-color: #da1380;
+}
+
+.subAnuncio-whatsapp {
+    @extend .subAnuncio;
+    background-color: #11d411;
+}
+
+
+
+@media screen and (max-width: 320px){
     h1 {
-        font-size: $font20;
-        padding: $font10;
+        font-size: 10px;
+        padding: 5px;
     }
 }
